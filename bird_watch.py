@@ -25,9 +25,7 @@ if args.usbcam:
     camera_type = 'usb'
 
 # This is needed since the working directory is the object_detection folder.
-sys.path
-sys.path.insert(0, '/home/pi/tensorflow1/models/research/object_detection')
-
+sys.path.append('..')
 
 # Import utilites
 from utils import label_map_util
